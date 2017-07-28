@@ -17,12 +17,15 @@ namespace WebAPI
                       "~/Scripts/jquery-{version}.js",
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js",
-                      "~/Scripts/kendo.all.min.js"
+                      "~/Scripts/kendo.all.min.js",
+                      "~/Scripts/kendo.grid.min.js"
                       ));
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/",
+                      "~/Content/kendo.common.min.css",
+                      "~/Content/kendo.material.min.css",
+                      "~/Content/kendo.default.mobile.min.css",
                       "~/Content/site.css"));
         }
     }

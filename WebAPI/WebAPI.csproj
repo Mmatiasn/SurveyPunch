@@ -17,7 +17,7 @@
     <AssemblyName>WebAPI</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -716,6 +716,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\jszip.min.js" />
+    <None Include="Scripts\kendo.all-vsdoc.js" />
+    <None Include="Scripts\kendo.all.min.intellisense.js" />
     <Content Include="Scripts\kendo.all.min.js" />
     <Content Include="Scripts\kendo.angular.min.js" />
     <Content Include="Scripts\kendo.autocomplete.min.js" />
@@ -732,12 +734,14 @@
     <Content Include="Scripts\kendo.data.odata.min.js" />
     <Content Include="Scripts\kendo.data.signalr.min.js" />
     <Content Include="Scripts\kendo.data.xml.min.js" />
+    <None Include="Scripts\kendo.dataviz-vsdoc.js" />
     <Content Include="Scripts\kendo.dataviz.barcode.min.js" />
     <Content Include="Scripts\kendo.dataviz.chart.min.js" />
     <Content Include="Scripts\kendo.dataviz.core.min.js" />
     <Content Include="Scripts\kendo.dataviz.diagram.min.js" />
     <Content Include="Scripts\kendo.dataviz.gauge.min.js" />
     <Content Include="Scripts\kendo.dataviz.map.min.js" />
+    <None Include="Scripts\kendo.dataviz.min.intellisense.js" />
     <Content Include="Scripts\kendo.dataviz.min.js" />
     <Content Include="Scripts\kendo.dataviz.mobile.min.js" />
     <Content Include="Scripts\kendo.dataviz.qrcode.min.js" />
@@ -772,6 +776,7 @@
     <Content Include="Scripts\kendo.maskedtextbox.min.js" />
     <Content Include="Scripts\kendo.mediaplayer.min.js" />
     <Content Include="Scripts\kendo.menu.min.js" />
+    <None Include="Scripts\kendo.mobile-vsdoc.js" />
     <Content Include="Scripts\kendo.mobile.actionsheet.min.js" />
     <Content Include="Scripts\kendo.mobile.application.min.js" />
     <Content Include="Scripts\kendo.mobile.button.min.js" />
@@ -780,6 +785,7 @@
     <Content Include="Scripts\kendo.mobile.drawer.min.js" />
     <Content Include="Scripts\kendo.mobile.listview.min.js" />
     <Content Include="Scripts\kendo.mobile.loader.min.js" />
+    <None Include="Scripts\kendo.mobile.min.intellisense.js" />
     <Content Include="Scripts\kendo.mobile.min.js" />
     <Content Include="Scripts\kendo.mobile.modalview.min.js" />
     <Content Include="Scripts\kendo.mobile.navbar.min.js" />
@@ -834,6 +840,8 @@
     <Content Include="Scripts\kendo.validator.min.js" />
     <Content Include="Scripts\kendo.view.min.js" />
     <Content Include="Scripts\kendo.virtuallist.min.js" />
+    <None Include="Scripts\kendo.web-vsdoc.js" />
+    <None Include="Scripts\kendo.web.min.intellisense.js" />
     <Content Include="Scripts\kendo.web.min.js" />
     <Content Include="Scripts\kendo.webcomponents.js" />
     <Content Include="Scripts\kendo.window.min.js" />
@@ -1004,16 +1012,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>58751</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:58751/</IISUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
-          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>

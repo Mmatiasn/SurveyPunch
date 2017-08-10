@@ -15,17 +15,20 @@ namespace WebAPI
 
             bundles.Add(new ScriptBundle("~/bundles/js").Include(
                       "~/Scripts/jquery-{version}.js",
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js",
+                      "~/Scripts/bootstrap.min.js",
+                      "~/Scripts/mdb.min.js",
+                      "~/Scripts/respond.min.js",
                       "~/Scripts/kendo.all.min.js",
                       "~/Scripts/kendo.grid.min.js"
                       ));
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/font-awesome.min.css",
+                      "~/Content/bootstrap.min.css",
                       "~/Content/kendo.common.min.css",
                       "~/Content/kendo.material.min.css",
                       "~/Content/kendo.default.mobile.min.css",
+                      "~/Content/mdb.min.css",
                       "~/Content/site.css"));
         }
     }

@@ -1,35 +1,12 @@
 ﻿
-
-<div id="foo" data-role="view" data-init="onInit" data-stretch="true">
-    <div id="grid"></div>
-</div>
-
-
 @section styles{
-    <style>
-        .none{
+    <style type="text/css">
 
-        }
     </style>
 }
 
 @section scripts{
-    <script>
-        $(document).ready(function () {
-            $("#grid").kendoGrid({
-                columns: [
-                  { field: "name" },
-                  { field: "age" },
-                  { command: "destroy" }
-                ],
-                dataSource: [
-                  { name: "Jane Doe", age: 30 },
-                  { name: "John Doe", age: 33 }
-                ],
-                filterable: true,
-                columnMenu: true,
-                mobile: true
-            });
-        });
+    <script type="text/javascript">
+
     </script>
 }

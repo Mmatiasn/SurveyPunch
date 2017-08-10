@@ -1,17 +1,25 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿/* ADJUSTMENT CSS */
+/* MARGIN ADJUSTMENTS */
+
+/* PADDING ADJUSTMENTS */
+
+/* POSITION ADJUSTMENTS */
+
+/* Z-INDEX ADJUSTMENTS */
+
+/* BORDER ADJUSTMENTS */
+
+/* BACKGROUND COLOR ADJUSTMENTS */
+.sp-bg-fblue{
+    background-color: #3b5998;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
+/* END OF ADJUSTMENT CSS */
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
+/* FONT CSS */
+
+/* FONT COLORS */
+
+/* FONT STYLES */
+
+/* END OF FONT CSS */

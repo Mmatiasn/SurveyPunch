@@ -1,25 +1,77 @@
-﻿/* ADJUSTMENT CSS */
-/* MARGIN ADJUSTMENTS */
+﻿/********** FONTS **********/
+@font-face {
+    font-family: SurveyPunchLogo;
+    src: url(../fonts/DIMIS___.TTF);
+}
+/********** END OF FONTS **********/
 
-/* PADDING ADJUSTMENTS */
 
-/* POSITION ADJUSTMENTS */
 
-/* Z-INDEX ADJUSTMENTS */
+/********** OVERRIDES **********/
+/* MENUBAR TOP LEFT @ _LAYOUT.CSHTML */
+a.sp-menubar {
+    position: relative !important;
+    padding-left: 0 !important;
+}
+/********** END OF OVERRIDES **********/
 
-/* BORDER ADJUSTMENTS */
 
-/* BACKGROUND COLOR ADJUSTMENTS */
-.sp-bg-fblue{
+
+/********** BACKGROUND COLOR ADJUSTMENTS **********/
+.sp-bg-fblue {
     background-color: #3b5998;
 }
+/********** END OF BACKGROUND COLOR ADJUSTMENTS **********/
 
-/* END OF ADJUSTMENT CSS */
 
-/* FONT CSS */
 
-/* FONT COLORS */
+/********** EXTRA SMALL DEVICES (PORTRAIT PHONES, LESS THAN 576PX) **********/
+/* NO MEDIA QUERY SINCE THIS IS THE DEFAULT IN BOOTSTRAP */
+a.sp-logo {
+    font-family: SurveyPunchLogo, sans-serif;
+    font-size: 21px !important;
+    transition: font-size .5s ease-in-out;
+}
 
-/* FONT STYLES */
+    a.sp-logo:hover {
+        transition: font-size 1.5s ease-in-out;
+        transform: scale(1.4);
+    }
+/********** END OF EXTRA SMALL DEVICES (PORTRAIT PHONES, LESS THAN 576PX) **********/
 
-/* END OF FONT CSS */
+
+
+
+/********** SMALL DEVICES (LANDSCAPE PHONES, 576PX AND UP) **********/
+@media (min-width: 576px) {
+    a.sp-logo {
+        font-size: 34px !important;
+        transition: font-size .5s ease-in-out;
+    }
+}
+/********** END OF SMALL DEVICES (LANDSCAPE PHONES, 576PX AND UP) **********/
+
+
+
+/********** MEDIUM DEVICES (TABLETS, 768PX AND UP) **********/
+@media (min-width: 768px) {
+    a.sp-logo {
+    }
+}
+/********** END OF MEDIUM DEVICES (TABLETS, 768PX AND UP) **********/
+
+
+
+
+/********** LARGE DEVICES (DESKTOPS, 992PX AND UP) **********/
+@media (min-width: 992px) {
+}
+/********** END OF LARGE DEVICES (DESKTOPS, 992PX AND UP) **********/
+
+
+
+
+/********** EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200PX AND UP) **********/
+@media (min-width: 1200px) {
+}
+/********** END OF EXTRA LARGE DEVICES (LARGE DESKTOPS, 1200PX AND UP) **********/

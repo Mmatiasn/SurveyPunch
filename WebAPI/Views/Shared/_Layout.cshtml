@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#3b5998">
     <link rel="icon" type="image/png" href="@Url.Content("~/Content/SurveyPunchImages/sp_icon_032.png")">
 
     <title>@ViewBag.Title</title>
@@ -21,7 +22,7 @@
         <li>
             <div class="sp-bg-fblue">
                 <img src="@Url.Content("~/Content/SurveyPunchImages/sp_profile_074.png")" class="img-responsive img-circle">
-                <div class="rgba-stylish-strong">
+                <div>
                     <p class="user white-text">
                         Log in
                         <br />
@@ -51,10 +52,19 @@
         <div class="container-fluid">
             <div class="navbar-header pull-left">
                 <!-- SideNav slide-out button -->
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
+                <ul class="list-inline pull-left text-center">
+                    <li>
+                        <a href="#" data-activates="slide-out" class="button-collapse sp-menubar"><i class="fa fa-bars"></i></a>
+                    </li>
+                </ul>
                 <!--/. SideNav slide-out button -->
-                <img src="@Url.Content("~/Content/SurveyPunchImages/sp_profile_074.png")" class="img-responsive"/>
             </div>
+
+            <ul class="list-inline pull-left text-center">
+                <li>
+                    <a href="@Url.Action("Index", "Home")" class="waves-effect waves-light sp-logo">Survey Punch</a>
+                </li>
+            </ul>
 
             <!-- Navbar Icons -->
             <ul class="list-inline pull-right text-center">
@@ -335,10 +345,25 @@
 
     @Scripts.Render("~/bundles/js")
     <script type="text/javascript">
-            // Initialize collapse button
-            $(".button-collapse").sideNav();
-            // Initialize collapsible
-            $('.collapsible').collapsible();
+        // Initialize collapse button
+        $(".button-collapse").sideNav();
+        // Initialize collapsible
+        $('.collapsible').collapsible();
+
+        function person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        function person(first, last, age, eye, color) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+            this.color = color;
+        }
     </script>
     @RenderSection("scripts", required: false)
 

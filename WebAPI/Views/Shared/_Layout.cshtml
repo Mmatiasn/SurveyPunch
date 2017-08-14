@@ -13,310 +13,179 @@
     @RenderSection("styles", required: false)
 </head>
 <body>
-    <!-- SideNav slide-out button -->
-    <a href="#" data-activates="slide-out" class="navbar-brand button-collapse"><i class="material-icons">menu</i></a>
-    <!--/. SideNav slide-out button -->
-    <!-- Sidebar navigation -->
+
+
+
+    <!-- SIDEBAR NAVIGATION -->
     <ul id="slide-out" class="side-nav admin-side-nav dark-side-nav">
-        <!-- Logo -->
+        <!-- LOGO -->
         <li>
             <div class="sp-bg-fblue">
                 <img src="@Url.Content("~/Content/SurveyPunchImages/sp_profile_074.png")" class="img-responsive img-circle">
                 <div>
                     <p class="user white-text">
-                        Log in
-                        <br />
-                        to see your profile
+                        <a class="sp-logo-font sp-text-glow-white" href="@Url.Action("Index", "Home")">Survey Punch</a>
                     </p>
                 </div>
             </div>
         </li>
-        <!--/. Logo -->
-        <!-- Side navigation links -->
+        <!--/. LOGO -->
+        <!-- SIDE NAVIGATION LINKS -->
         <li>
             <ul class="collapsible collapsible-accordion">
-                <li><a href="#intro" class="waves-effect waves-light"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-money"></i> Sales</a></li>
-                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-line-chart"></i> Conversion</a></li>
-                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-users"></i> Website Traffic</a></li>
-                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-search"></i> SEO</a></li>
-                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-share-alt"></i> Social</a></li>
+                <li class="sp-side-nav-login">
+                    <button href="#" class="btn btn-flat sp-bg-fblue white-text waves-effect waves-light">
+                        <i class="fa fa-sign-in"></i> Sign In
+                    </button>
+                </li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-search"></i> Search</a></li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-fire"></i> Trending</a></li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-plus-square"></i> New Survey</a></li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-list"></i> My Surveys</a></li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-bar-chart"></i> Statistics</a></li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-code"></i> Feedback</a></li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-users"></i> About</a></li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-book"></i> Terms of Service</a></li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-user-secret"></i> Privacy Policy</a></li>
             </ul>
         </li>
-        <!--/. Side navigation links -->
-
+        <!--/. SIDE NAVIGATION LINKS -->
     </ul>
-    <!--/. Sidebar navigation -->
-    <!--Navbar-->
+    <!--/. SIDEBAR NAVIGATION -->
+    <!--NAVBAR-->
     <nav class="double-navbar navbar navbar-fixed-top sp-bg-fblue z-depth-1" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header pull-left">
-                <!-- SideNav slide-out button -->
+                <!-- SIDENAV SLIDE-OUT BUTTON -->
                 <ul class="list-inline pull-left text-center">
                     <li>
                         <a href="#" data-activates="slide-out" class="button-collapse sp-menubar"><i class="fa fa-bars"></i></a>
                     </li>
                 </ul>
-                <!--/. SideNav slide-out button -->
+                <!--/. SIDENAV SLIDE-OUT BUTTON -->
             </div>
-
             <ul class="list-inline pull-left text-center">
                 <li>
-                    <a href="@Url.Action("Index", "Home")" class="waves-effect waves-light sp-logo">Survey Punch</a>
+                    <a href="@Url.Action("Index", "Home")" class="waves-effect waves-light sp-logo sp-logo-font">Survey Punch</a>
                 </li>
             </ul>
-
-            <!-- Navbar Icons -->
-            <ul class="list-inline pull-right text-center">
-                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-question"></i><br><span>Help</span></a></li>
-                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-cogs"></i><br><span>Settings</span></a></li>
-                <li><a href="#" class="waves-effect waves-light" data-toggle="modal" data-target="#contact-form"><i class="fa fa-sign-out"></i><br><span>Logout</span></a></li>
-
+            <!-- NAVBAR ICONS -->
+            <ul class="list-inline pull-right text-center sp-li-a-i-pulse-h">
+                <li class="hidden-xs"><a href="#" class="waves-effect waves-light"><i class="fa fa-search"></i><br><span class="sp-font-weight-500">Search</span></a></li>
+                <li class="hidden-xs"><a href="#" class="waves-effect waves-light"><i class="fa fa-fire"></i><br><span class="sp-font-weight-500">Trending</span></a></li>
+                <li class="hidden-xs"><a href="#" class="waves-effect waves-light"><i class="fa fa-question"></i><br><span class="sp-font-weight-500">Help</span></a></li>
+                <li><a href="#" class="waves-effect waves-light"><i class="fa fa-sign-in"></i><br><span class="sp-font-weight-500">Sign In</span></a></li>
             </ul>
-            <!--/. Navbar Icons -->
+            <!--/. NAVBAR ICONS -->
         </div>
     </nav>
-    <!--/.Navbar-->
-    <!-- Main container-->
+    <!--/.NAVBAR-->
+    <!-- MAIN CONTAINER-->
     <div class="container">
 
-        <div class="divider-new pt-5">
-            <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">About us</h2>
-        </div>
-
-        <!--Section: About-->
-        <section id="about" class="text-center wow fadeIn" data-wow-delay="0.2s">
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo assumenda eligendi ex exercitationem harum deleniti quaerat beatae ducimus dolor voluptates magnam, reiciendis pariatur culpa tempore quibusdam quidem, saepe eius.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo assumenda eligendi ex exercitationem harum deleniti quaerat beatae ducimus dolor voluptates magnam, reiciendis pariatur culpa tempore quibusdam quidem, saepe eius.</p>
-
-        </section>
-        <!--Section: About-->
-
-        <div class="divider-new pt-5">
-            <h2 class="h2-responsive wow fadeIn">Best features</h2>
-        </div>
-
-        <!--Section: Best features-->
-        <section id="best-features">
-
-            <div class="row pt-3">
-
-                <!--First columnn-->
-                <div class="col-lg-3 mb-r">
-
-                    <!--Card-->
-                    <div class="card wow fadeIn">
-
-                        <!--Card image-->
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(25).jpg" alt="Card image cap">
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title text-center">360 Advertising</h4>
-                            <hr>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-
-                    </div>
-                    <!--/.Card-->
-                </div>
-                <!--First columnn-->
-                <!--Second columnn-->
-                <div class="col-lg-3 mb-r">
-                    <!--Card-->
-                    <div class="card wow fadeIn" data-wow-delay="0.2s">
-
-                        <!--Card image-->
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(14).jpg" alt="Card image cap">
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title text-center">Top-class Team</h4>
-                            <hr>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-
-                    </div>
-                    <!--/.Card-->
-                </div>
-                <!--Second columnn-->
-                <!--Third columnn-->
-                <div class="col-lg-3 mb-r">
-                    <!--Card-->
-                    <div class="card wow fadeIn" data-wow-delay="0.4s">
-
-                        <!--Card image-->
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(21).jpg" alt="Card image cap">
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title text-center">Top-class Team</h4>
-                            <hr>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-
-                    </div>
-                    <!--/.Card-->
-                </div>
-                <!--Third columnn-->
-                <!--First columnn-->
-                <div class="col-lg-3 mb-r">
-                    <!--Card-->
-                    <div class="card wow fadeIn" data-wow-delay="0.6s">
-
-                        <!--Card image-->
-                        <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20(37).jpg" alt="Card image cap">
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h4 class="card-title text-center">24/7 Support</h4>
-                            <hr>
-                            <!--Text-->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-
-                    </div>
-                    <!--/.Card-->
-                </div>
-                <!--First columnn-->
-            </div>
-
-        </section>
-        <!--/Section: Best features-->
-
-        <div class="divider-new">
-            <h2 class="h2-responsive wow fadeIn">Contact us</h2>
-        </div>
-
-        <!--Section: Contact-->
-        <section id="contact pb-5">
-            <div class="row">
-                <!--First column-->
-                <div class="col-md-8 mb-5">
-                    <div id="map-container" class="z-depth-1 wow fadeIn" style="height: 300px"></div>
-                </div>
-                <!--/First column-->
-                <!--Second column-->
-                <div class="col-md-4">
-                    <ul class="text-center list-unstyled">
-                        <li class="wow fadeIn" data-wow-delay="0.2s">
-                            <i class="fa fa-map-marker teal-text fa-lg"></i>
-                            <p>New York, NY 10012, USA</p>
-                        </li>
-
-                        <li class="wow fadeIn mt-5 pt-2" data-wow-delay="0.3s">
-                            <i class="fa fa-phone teal-text fa-lg"></i>
-                            <p>+ 01 234 567 89</p>
-                        </li>
-
-                        <li class="wow fadeIn mt-5 pt-2" data-wow-delay="0.4s">
-                            <i class="fa fa-envelope teal-text fa-lg"></i>
-                            <p>contact@mdbootstrap.com</p>
-                        </li>
-                    </ul>
-                </div>
-                <!--/Second column-->
-            </div>
-        </section>
-        <!--Section: Contact-->
-
     </div>
-    <!--/ Main container-->
-    <!--Footer-->
-    <footer class="page-footer center-on-small-only elegant-color-dark">
-
-        <!--Footer Links-->
+    <!--/.MAIN CONTAINER-->
+    <!--FOOTER-->
+    <footer class="page-footer sp-bg-fblue center-on-small-only">
+        <!--FOOTER LINKS-->
         <div class="container-fluid">
             <div class="row">
-
-                <!--First column-->
-                <div class="col-lg-3 col-md-6 ml-auto">
-                    <h5 class="titles font-bold mt-3 mb-4">ABOUT MATERIAL DESIGN</h5>
-                    <p>Material Design (codenamed Quantum Paper) is a design language developed by Google. </p>
-
-                    <p>Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS, and JS framework - Bootstrap.</p>
+                <!--FIRST COLUMN-->
+                <div class="col-md-3 col-xs-offset-1">
+                    <p class="column-title white-text">About Material Design</p>
+                    <div class="column-content">
+                        <p class="thin-100 white-text">
+                            Material Design (codenamed Quantum Paper) is a design language developed by Google.
+                            <br>
+                            <br> Material Design for Bootstrap (MDB) is a powerful Material Design UI KIT for most popular HTML, CSS, and JS framework - Bootstrap.
+                        </p>
+                    </div>
                 </div>
-                <!--/.First column-->
+                <!--/.FIRST COLUMN-->
+                <!--SECOND COLUMN-->
+                <div class="col-md-2 col-md-offset-1">
+                    <p class="column-title white-text">USEFUL LINKS</p>
 
-                <hr class="w-100 clearfix d-sm-none">
-
-                <!--Second column-->
-                <div class="col-lg-2 col-md-6 ml-auto">
-                    <h5 class="title font-bold mt-3 mb-4">Our Projects</h5>
                     <ul>
-                        <li><a href="#!">Jeffs Bike Shop</a></li>
-                        <li><a href="#!">Main Street Restaurant</a></li>
-                        <li><a href="#!">Connect Groceries</a></li>
-                        <li><a href="#!">White-To-Black Coffe Shop</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">About MDB</a></li>
+                        <li><a href="#">Suport</a></li>
+                        <li><a href="#">Bug Report</a></li>
+                        <li><a href="#">License</a></li>
+                    </ul>
+
+                </div>
+                <!--/.SECOND COLUMN-->
+                <!--THIRD COLUMN-->
+                <div class="col-md-2">
+                    <p class="column-title white-text">MDB Free Popular</p>
+
+                    <ul>
+                        <li><a href="#">Animations</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li><a href="#">Carousel</a></li>
+                        <li><a href="#">Buttons</a></li>
+                        <li><a href="#">Parallax</a></li>
                     </ul>
                 </div>
-                <!--/.Second column-->
+                <!--/.THIRD COLUMN-->
+                <!--FOURTH COLUMN-->
+                <div class="col-md-2">
+                    <p class="column-title white-text">MDB Pro Popular</p>
 
-                <hr class="w-100 clearfix d-sm-none">
-
-                <!--Third column-->
-                <div class="col-lg-2 col-md-6 ml-auto">
-                    <h5 class="title font-bold mt-3 mb-4">Useful Resources</h5>
                     <ul>
-                        <li><a href="#!">2016 Advertising Report</a></li>
-                        <li><a href="#!">Best NY Agencies</a></li>
-                        <li><a href="#!">Trends for 2017</a></li>
-                        <li><a href="#!">World Advertisement Report</a></li>
+                        <li><a href="#">E-commerce</a></li>
+                        <li><a href="#">Cards</a></li>
+                        <li><a href="#">SideNav</a></li>
+                        <li><a href="#">MaterialBox</a></li>
+                        <li><a href="#">Social Buttons</a></li>
                     </ul>
                 </div>
-                <!--/.Third column-->
-
-                <hr class="w-100 clearfix d-sm-none">
-
-                <!--Fourth column-->
-                <div class="col-lg-2 col-md-6 ml-auto">
-                    <h5 class="title font-bold mt-3 mb-4">Find us on</h5>
-                    <ul>
-                        <li><a href="#!">Facebook</a></li>
-                        <li><a href="#!">Twitter</a></li>
-                        <li><a href="#!">LinkedIn</a></li>
-                        <li><a href="#!">Behance</a></li>
-                    </ul>
-                </div>
-                <!--/.Fourth column-->
-
+                <!--/.FOURTH COLUMN-->
             </div>
         </div>
-        <!--/.Footer Links-->
-
+        <!--/.FOOTER LINKS-->
         <hr>
-
-        <!--Call to action-->
-        <div class="call-to-action">
-            <h4 class="mb-5">Material Design for Bootstrap</h4>
-            <ul>
+        <!--CALL TO ACTION-->
+        <div class="call-to-action inline-block">
+            <ul class="list-inline">
                 <li>
-                    <h5>Get our UI KIT for free</h5>
+                    <h5 class="white-text">Register for free </h5>
                 </li>
-                <li><a target="_blank" href="https://mdbootstrap.com/getting-started/" class="btn btn-info" rel="nofollow">Sign up!</a></li>
-                <li><a target="_blank" href="https://mdbootstrap.com/material-design-for-bootstrap/" class="btn btn-default" rel="nofollow">Learn more</a></li>
+                <li> <a class="btn btn-danger waves-effect waves-light">GET STARTED!</a></li>
             </ul>
         </div>
-        <!--/.Call to action-->
-        <!--Copyright-->
-        <div class="footer-copyright">
+        <!--/.CALL TO ACTION-->
+        <!--REGISTRATION APIS-->
+        <div class="social-section text-center">
+            <a class="btn-sm-full fb-bg rectangle waves-effect waves-light">
+                <i class="fa fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+            <a class="btn-sm-full tw-bg rectangle waves-effect waves-light">
+                <i class="fa fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+            <a class="btn-sm-full gplus-bg rectangle waves-effect waves-light">
+                <i class="fa fa-google-plus"></i>
+                <span>Google +</span>
+            </a>
+            <a class="btn-sm-full comm-bg rectangle waves-effect waves-light">
+                <i class="fa fa-comments"></i>
+                <span>Forum</span>
+            </a>
+        </div>
+        <!--/.REGISTRATION APIS-->
+        <!--COPYRIGHT-->
+        <div class="footer-copyright text-center sp-bg-fdarkblue">
             <div class="container-fluid">
-                &copy; @DateTime.Now.Year Copyright: <a href="https://www.SurveyPunch.com"> SurveyPunch.com </a>
-
+                <span class="bold-700">&copy; @DateTime.Now.Year Copyright: </span><a class="sp-logo-font sp-text-glow-white" href="@Url.Action("Index", "Home")">Survey Punch</a>
             </div>
         </div>
-        <!--/.Copyright-->
-
+        <!--/.COPYRIGHT-->
     </footer>
-    <!--/.Footer-->
+    <!--/.FOOTER-->
     @*<div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -350,20 +219,6 @@
         // Initialize collapsible
         $('.collapsible').collapsible();
 
-        function person(first, last, age, eye) {
-            this.firstName = first;
-            this.lastName = last;
-            this.age = age;
-            this.eyeColor = eye;
-        }
-
-        function person(first, last, age, eye, color) {
-            this.firstName = first;
-            this.lastName = last;
-            this.age = age;
-            this.eyeColor = eye;
-            this.color = color;
-        }
     </script>
     @RenderSection("scripts", required: false)
 

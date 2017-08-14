@@ -24,6 +24,7 @@ namespace WebAPI
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Content/font-awesome.min.css",
+                      "~/Content/animate.css",
                       "~/Content/bootstrap.min.css",
                       "~/Content/kendo.common.min.css",
                       "~/Content/kendo.material.min.css",

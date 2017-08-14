@@ -1,6 +1,6 @@
 ﻿/********** FONTS **********/
 @font-face {
-    font-family: SurveyPunchLogo;
+    font-family: survey-punch;
     src: url(../fonts/DIMIS___.TTF);
 }
 /********** END OF FONTS **********/
@@ -21,22 +21,75 @@ a.sp-menubar {
 .sp-bg-fblue {
     background-color: #3b5998;
 }
+
+.sp-bg-fdarkblue {
+    background-color: #29487d;
+}
 /********** END OF BACKGROUND COLOR ADJUSTMENTS **********/
+
+
+
+/********** FONT ADJUSTMENTS **********/
+.sp-font-weight-500 {
+    font-weight: 500;
+}
+/********** END OF FONT ADJUSTMENTS **********/
+
+
+
+/********** ANIMATION ADJUSTMENTS **********/
+.sp-li-a-i-pulse-h > li:hover > a > i {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-name: pulse;
+}
+
+ul.side-nav.admin-side-nav li ul li:hover i {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-name: pulse;
+}
+/********** END OF ANIMATION ADJUSTMENTS **********/
 
 
 
 /********** EXTRA SMALL DEVICES (PORTRAIT PHONES, LESS THAN 576PX) **********/
 /* NO MEDIA QUERY SINCE THIS IS THE DEFAULT IN BOOTSTRAP */
+.sp-logo-font {
+    font-family: survey-punch, sans-serif;
+}
+
 a.sp-logo {
-    font-family: SurveyPunchLogo, sans-serif;
     font-size: 21px !important;
     transition: font-size .5s ease-in-out;
 }
 
-    a.sp-logo:hover {
-        transition: font-size 1.5s ease-in-out;
-        transform: scale(1.4);
+.sp-side-nav-login {
+    padding: 0 20px !important;
+}
+
+    .sp-side-nav-login button {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
+
+.user a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.sp-outline, a.sp-logo:focus {
+    outline: #FFFFFF auto;
+}
+
+.sp-text-glow-white:hover, a.sp-logo:hover, a.sp-logo:focus {
+    text-shadow: 0px 0px 10px #FFFFFF;
+    transition: text-shadow 0.2s linear;
+}
 /********** END OF EXTRA SMALL DEVICES (PORTRAIT PHONES, LESS THAN 576PX) **********/
 
 
@@ -55,8 +108,6 @@ a.sp-logo {
 
 /********** MEDIUM DEVICES (TABLETS, 768PX AND UP) **********/
 @media (min-width: 768px) {
-    a.sp-logo {
-    }
 }
 /********** END OF MEDIUM DEVICES (TABLETS, 768PX AND UP) **********/
 

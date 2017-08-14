@@ -14,5 +14,19 @@ namespace WebAPI.Controllers
 
             return View();
         }
+
+        public ActionResult Terms()
+        {
+            ViewBag.Title = "Terms of Service";
+
+            return View();
+        }
+
+        public ActionResult Privacy()
+        {
+            ViewBag.Title = "Privacy Policy";
+
+            return View();
+        }
     }
 }

@@ -10,21 +10,28 @@ namespace WebAPI.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Title = "Home Page";
+            ViewBag.Title = "Survey Punch - Home";
 
             return View();
         }
 
         public ActionResult Terms()
         {
-            ViewBag.Title = "Terms of Service";
+            ViewBag.Title = "Survey Punch - Terms of Service";
 
             return View();
         }
 
         public ActionResult Privacy()
         {
-            ViewBag.Title = "Privacy Policy";
+            ViewBag.Title = "Survey Punch - Privacy Policy and Consents";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Title = "Survey Punch - Contact";
 
             return View();
         }
